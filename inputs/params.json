@@ -1,0 +1,327 @@
+{
+  "biome_to_base_tile": {
+    "water":    "water",
+    "plain":    "plain",
+    "tundra":   "plain",
+    "mountain": "mountain",
+    "montane":  "mountain",
+    "desert":   "sand",
+    "jungle":   "plain",
+    "swamp":    "plain",
+    "forest":   "plain"
+  },
+
+  "tile_colors": {
+    "plain":    "#ffffff",
+    "sand":     "#ffff66",
+    "mountain": "#8b4513",
+    "water":    "#0077ff",
+    "forest":   "#228b22",
+    "village":  "#ff6600"
+  },
+
+  "mountain_params": {
+    "plain": {
+      "seed": 4,
+      "range_count": 100,
+      "length_min": 5,
+      "length_max": 8,
+      "width_min": 1,
+      "width_max": 3,
+      "min_distance": 5
+    },
+    "tundra": {
+      "seed": 7,
+      "range_count": 10,
+      "length_min": 12,
+      "length_max": 20,
+      "width_min": 2,
+      "width_max": 3,
+      "min_distance": 12
+    },
+    "mountain": {
+      "seed": 0,
+      "range_count": 0,
+      "length_min": 0,
+      "length_max": 0,
+      "width_min": 0,
+      "width_max": 0,
+      "min_distance": 0
+    },
+    "montane": {
+      "seed": 0,
+      "range_count": 0,
+      "length_min": 0,
+      "length_max": 0,
+      "width_min": 0,
+      "width_max": 0,
+      "min_distance": 0
+    },
+    "desert": {
+      "seed": 1004,
+      "range_count": 20,
+      "length_min": 5,
+      "length_max": 15,
+      "width_min": 1,
+      "width_max": 2,
+      "min_distance": 6
+    },
+    "jungle": {
+      "seed": 1006,
+      "range_count": 25,
+      "length_min": 6,
+      "length_max": 18,
+      "width_min": 1,
+      "width_max": 2,
+      "min_distance": 7
+    },
+    "swamp": {
+      "seed": 1006,
+      "range_count": 0,
+      "length_min": 0,
+      "length_max": 0,
+      "width_min": 0,
+      "width_max": 0,
+      "min_distance": 0
+    },
+    "forest": {
+      "seed": 1,
+      "range_count": 20,
+      "length_min": 10,
+      "length_max": 20,
+      "width_min": 1,
+      "width_max": 2,
+      "min_distance": 10
+    }
+  },
+
+
+  
+  "river_params": {
+    "seed": 4399,
+    "river_count": 30,
+    "min_source_distance": 40,
+    "river_smoothing": 0.4,
+    "river_attraction": 2.0,
+    "river_attraction_range": 3,
+    "river_merge_distance": 2,
+    "merge_width_increment": 1,
+    "diagonal_penalty": 0.4,
+    "random_noise": 0.7,
+    "cost_weights": { "mountain": 100, "montane": 100, "plain": 2, "forest": 2, "desert": 3, "swamp": 2, "water": 0 }
+  },
+
+  "pond_params": {
+    "seed": 1,
+    "pond_count": 90,
+    "radius_min": 2,
+    "radius_max": 5,
+    "threshold": 0.5
+  },
+
+  
+  "forest_params": {
+    "forest": {
+      "seed": 7777,
+      "core_radius": 5,
+      "halo_radius": 20,
+      "p_core": 0.2,
+      "p_halo": 0.1,
+      "center_count": 200,
+      "replace_mountain": false
+    },
+    "jungle": {
+      "seed": 7778,
+      "core_radius": 20,
+      "halo_radius": 20,
+      "p_core": 0.6,
+      "p_halo": 0.3,
+      "center_count": 15,
+      "replace_mountain": false
+    },
+    "montane": {
+      "seed": 7779,
+      "core_radius": 3,
+      "halo_radius": 8,
+      "p_core": 0.7,
+      "p_halo": 0.3,
+      "center_count": 100,
+      "replace_mountain": true
+    },
+    "desert": {
+      "seed": 7780,
+      "core_radius": 1,
+      "halo_radius": 1,
+      "p_core": 0.3,
+      "p_halo": 0.1,
+      "center_count": 30,
+      "replace_mountain": false
+    },
+    "swamp": {
+      "seed": 7781,
+      "core_radius": 10,
+      "halo_radius": 20,
+      "p_core": 0.4,
+      "p_halo": 0.2,
+      "center_count": 10,
+      "replace_mountain": false
+    },
+    "plain": {
+      "seed": 7782,
+      "core_radius": 1,
+      "halo_radius": 2,
+      "p_core": 0.3,
+      "p_halo": 0.1,
+      "center_count": 2000,
+      "replace_mountain": false
+    },
+    "tundra": {
+      "seed": 7783,
+      "core_radius": 15,
+      "halo_radius": 30,
+      "p_core": 0.1,
+      "p_halo": 0.05,
+      "center_count": 15,
+      "replace_mountain": false
+    }
+  },
+
+  "island_params": {
+    "seed_islands": 6680,
+    "island_count": 45,
+    "max_attempts": 1000,
+    "min_border_distance": 5,
+    "radius_min": 3,
+    "radius_max": 30,
+    "k_scale": 0.7
+  },
+
+  "island_terrain_params": {
+    "noise_scale":         5.0,
+    "mountain_threshold":  0.4,
+    "forest_threshold":    0.5
+  },
+
+
+"canyon_params": {
+  "mountain": {
+    "seed":          7507,
+    "count":         5,
+    "length_min":    200,
+    "length_max":    200,
+    "width":         1,
+    "angle_jitter":  0.2
+  },
+  "montane": {
+    "seed":          8572,
+    "count":         10,
+    "length_min":    200,
+    "length_max":    200,
+    "width":         2,
+    "angle_jitter":  0.5
+  }
+},
+
+"enemy_params": {
+  "plain": {
+    "enemy_count": 200,
+    "min_distance": 8,
+    "seed": 9489
+  },
+  "forest": {
+    "enemy_count": 150,
+    "min_distance": 10,
+    "seed": 9488
+  },
+  "montane": {
+    "enemy_count": 100,
+    "min_distance": 12,
+    "seed": 9487
+  },
+  "jungle": {
+    "enemy_count": 100,
+    "min_distance": 12,
+    "seed": 9487
+  },
+  "desert": {
+    "enemy_count": 100,
+    "min_distance": 12,
+    "seed": 9487
+  },
+  "swamp": {
+    "enemy_count": 100,
+    "min_distance": 12,
+    "seed": 9487
+  },
+  "tundra": {
+    "enemy_count": 100,
+    "min_distance": 12,
+    "seed": 9487
+  },
+  "water": {
+    "enemy_count": 100,
+    "min_distance": 12,
+    "seed": 9487
+  }
+},
+
+"village_params": {
+  "plain": {
+    "village_count": 30,
+    "min_distance": 20,
+    "min_cluster_size": 4,
+    "max_cluster_size": 8,
+    "seed": 1234
+  },
+  "forest": {
+    "village_count": 20,
+    "min_distance": 25,
+    "min_cluster_size": 5,
+    "max_cluster_size": 10,
+    "seed": 1235
+  },
+  "montane": {
+    "village_count": 10,
+    "min_distance": 30,
+    "min_cluster_size": 3,
+    "max_cluster_size": 6,
+    "seed": 1236
+  },
+  "jungle": {
+    "village_count": 10,
+    "min_distance": 30,
+    "min_cluster_size": 3,
+    "max_cluster_size": 6,
+    "seed": 1236
+  },
+  "desert": {
+    "village_count": 10,
+    "min_distance": 30,
+    "min_cluster_size": 3,
+    "max_cluster_size": 6,
+    "seed": 1236
+  },  
+  "swamp": {
+    "village_count": 10,
+    "min_distance": 30,
+    "min_cluster_size": 3,
+    "max_cluster_size": 6,
+    "seed": 1236
+  },  
+  "tundra": {
+    "village_count": 10,
+    "min_distance": 30,
+    "min_cluster_size": 3,
+    "max_cluster_size": 6,
+    "seed": 1236
+  },  
+  "water": {
+    "village_count": 10,
+    "min_distance": 30,
+    "min_cluster_size": 3,
+    "max_cluster_size": 6,
+    "seed": 1236
+  }
+}
+
+}
