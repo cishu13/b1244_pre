@@ -1,4 +1,19 @@
 {
+  "special_building_params": {
+    "town_center": {
+      "weight": 1.0,
+      "color": "#FFD700"
+    },
+    "shop": {
+      "weight": 1.5,
+      "color": "#00CED1"
+    },
+    "monastery": {
+      "weight": 0.5,
+      "color": "#8B0000"
+    }
+  },
+
   "biome_to_base_tile": {
     "water":    "water",
     "plain":    "plain",
