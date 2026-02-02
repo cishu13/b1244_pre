@@ -35,4 +35,7 @@ Modify village placement so that each cluster of villages contains 1 of: town ce
 
 ## PR链接
 
-待创建
+请访问以下链接创建 PR：
+https://github.com/cishu13/b1244_pre/pull/new/develop
+
+或手动创建后更新此链接。
